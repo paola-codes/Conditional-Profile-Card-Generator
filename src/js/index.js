@@ -22,6 +22,7 @@ import "../style/index.scss";
         city: null
     }
  */
+
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
@@ -37,7 +38,7 @@ function render(variables = {}) {
           <h2>${variables.role}</h2>
           <h3>${variables.country}</h3>
           <h3>${variables.city}</h3>
-          <ul class="position-right">
+          <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${variables.twitter}"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://github.com/${variables.github}"><i class="fa fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/${variables.linkedin}/"><i class="fa fa-linkedin"></i></a></li>
